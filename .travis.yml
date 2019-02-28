@@ -9,4 +9,5 @@ pandoc_version: 2.6
 addons:
   chrome: stable
 script:
-  - Rscript -e 'pagedown::chrome_print(system.file("examples/index.Rmd", package = "pagedown"), verbose = TRUE)'
+  - Rscript -e 'file.copy(system.file("examples/index.Rmd", package = "pagedown"), "demo.Rmd")'
+  - Rscript -e 'pagedown::chrome_print("demo.Rmd", verbose = TRUE)'
