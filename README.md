@@ -1,4 +1,4 @@
-# R Markdown to PDF with Travis
+# R Markdown HTML documents to PDF with Travis
 
 In this repository, you will find a minimal example for generating a PDF using `pagedown::chrome_print(...)` with Travis.
 
