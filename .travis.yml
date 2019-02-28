@@ -5,7 +5,7 @@ language: r
 sudo: false
 cache: 
   packages: yes
-pandoc_version: 2.2.3
+pandoc_version: 2.6
 addons:
   chrome: stable
 script:
