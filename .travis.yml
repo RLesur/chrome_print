@@ -9,4 +9,5 @@ pandoc_version: 2.6
 addons:
   chrome: stable
 script:
-  - Rscript -e 'pagedown::chrome_print("demo.Rmd", verbose = TRUE)'
+  - Rscript -e 'rmarkdown::render("demo.Rmd")'
+  - Rscript -e 'pagedown::chrome_print("demo.html", verbose = TRUE)'
