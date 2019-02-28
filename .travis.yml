@@ -6,7 +6,6 @@ sudo: false
 cache: 
   packages: yes
 pandoc_version: 2.2.3
-
 addons:
   chrome: stable
 script:
