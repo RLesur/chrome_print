@@ -10,4 +10,4 @@ addons:
   chrome: stable
 script:
   - Rscript -e 'rmarkdown::render("demo.Rmd")'
-  - Rscript -e 'pagedown::chrome_print("demo.html", verbose = TRUE)'
+  - Rscript -e 'pagedown::chrome_print("demo.html", extra_args = c("--disable-gpu", "--no-sandbox"), verbose = TRUE)'
