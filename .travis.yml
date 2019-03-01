@@ -4,4 +4,12 @@ pandoc_version: 2.6
 addons:
   chrome: stable
 script:
+  - git config --global user.email "romain.lesur@gmail.com"
+  - git config --global user.name "Romain Lesur"
+  - git clone -b gh-pages https://${GITHUB_PAT}@github.com/${TRAVIS_REPO_SLUG}.git output
+  - cp ./*.Rmd ./output
+  - cd output
   - Rscript -e 'pagedown::chrome_print("demo.Rmd", extra_args = c("--disable-gpu", "--no-sandbox"), work_dir = ".chromedir")'
+  - git add --all -f ./*
+  - git commit -m "Update site"
+  - git push origin gh-pages
