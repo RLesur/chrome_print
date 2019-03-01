@@ -1,6 +1,0 @@
-Package: chrome_print
-Type: Book
-Title: Test the pagedown::chrome_print function.
-Version: 0.0.1
-Imports: pagedown
-Remotes: rstudio/pagedown

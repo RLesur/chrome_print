@@ -1,9 +1,0 @@
-language: r
-sudo: false
-cache: 
-  packages: yes
-pandoc_version: 2.6
-addons:
-  chrome: stable
-script:
-  - Rscript -e 'pagedown::chrome_print("demo.Rmd", extra_args = c("--disable-gpu", "--no-sandbox"), work_dir = ".chromedir")'
