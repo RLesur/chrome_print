@@ -14,3 +14,4 @@ addons:
 ```r
 pagedown::chrome_print("myfile.Rmd", extra_args = c("--disable-gpu", "--no-sandbox"), work_dir = ".chromedir")
 ```
+
